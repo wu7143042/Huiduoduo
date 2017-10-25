@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>惠多多-首页</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+	<body>
+		<!-- 导航 -->
+		<div class='fina'>
+			<div class='rexian'>订购热线：400-800-5678</div>
+			<ul class='uls'>
+				<li>欢迎来到好享购物</li>
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+				<li><a href="#">我的订单</a></li>
+				<li><a href="#">我的hao24</a></li>
+				<li class='dahe'><a href="#" class='shouji'>手机购物</a>
+					<ul class='rewei'>
+						<li><img src="img/app_code.jpg"></li>
+						<li><p class='lis'>扫一扫,下载客户端</p></li>
+					</ul>
+				</li>
+				<li><a href="#">客服中心</a></li>
+			</ul>
+		</div>
+		<div class='text'>
+			<img class='img' src="img/logo.jpg">
+			<img class='images' src="img/150675225460381813.jpg">
+			<div class='shou'>
+				<span class='botton'>
+					<input type="text" class='texts'>
+					<input type="button" value='搜索' class='buttons'>
+				</span>
+				<ul class='text-bottom'>
+						<li>面膜</li>
+						<li>凉席</li>
+						<li>小熊电热饭盒</li>
+						<li>吉优百换鞋收纳凳</li>
+						<li>收纳用品</li>
+						<li>莱克</li>
+						<li>空调</li>
+				</ul>
+			</div>
+			<div class="goods">
+			 	<i></i>
+				<p>我的购物车></p>
+			</div>
+		</div>
+		<!-- header -->
+		<div class='dao-hang'>
+			<div class='indexs'>
+				<ul class='shoudao'>
+					<li>全部类目</li>
+					<li>首页</li>
+					<li>直播 </li>
+					<li>全球购 </li>
+					<li>品牌馆 </li>
+					<li>特惠活动 </li>
+					<li>抢红包
+						<img class='imgmm' src="img/148939594618792788.png">
+					</li>
+				</ul>
+			</div>
+			<div class='daohang'>
+				<div class='daodao'>
+					<ul class='ulshang'>
+						<li><a class='ulsas' href="#">全球购</a> </li>
+						<li><a class='ulsas' href="#">美食酒饮</a></li>
+						<li><a class='ulsas' href="#">个护美妆</a></li>
+						<li><a class='ulsas' href="#">家居生活</a></li>
+						<li><a class='ulsas' href="#">服饰家纺</a></li>
+						<li><a class='ulsas' href="#">数码家电</a></li>
+						<li><a class='ulsas' href="#">黄金珠宝</a></li>
+					</ul>
+				</div>
+				<div id='lunbotu'>
+					<div class="swiper-container" id='box'>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/150874031148018323.jpg"></div>
+							<div class="swiper-slide"><img src="img/150846691319834236.jpg"></div>
+							<div class="swiper-slide"><img src="img/150874294255684089.jpg"></div>
+							<div class="swiper-slide"><img src="img/150831840953585681.jpg"></div>
+							<div class="swiper-slide"><img src="img/150831876731059596.jpg"></div>
+							<div class="swiper-slide"><img src="img/150831010587095405.jpg"></div>
+							<div class="swiper-slide"><img src="img/150675219887589564.jpg"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src='js/jquery-1.8.3.min.js'></script>
+<script src="js/swiper-3.3.1.min.js"></script>
+<script type="text/javascript">
+		var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 2000,              
+        initialSlide: 0,       
+        loop: true,                    
+        effect: 'slide',         
+        slidesPerView:1,             
+        centeredSlides: true,       
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
+        autoplayDisableOnInteraction: false,       
+        pagination: '.swiper-pagination',
+        paginationClickable: true,           
+		})
+		document.getElementById('btn1').onclick=function(){
+   			mySwiper.stopAutoplay();
+		}
+		document.getElementById('btn2').onclick=function(){
+	        mySwiper.startAutoplay();
+		}
+		document.getElementById('box').onmouseenter=function(){
+	        mySwiper.stopAutoplay();
+		}
+		document.getElementById('box').onmouseleave=function(){
+	        mySwiper.startAutoplay();
+		}
+	</script>
